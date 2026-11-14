@@ -130,3 +130,39 @@ input:focus {
 input:user-invalid {
   border-color: #b91c1c;
 }
+
+/* ----- Button and log in link ----- */
+.actions {
+  padding-top: 32px;
+}
+
+.actions button {
+  padding: 16px 54px;
+  border: none;
+  border-radius: 8px;
+  background-color: #596d48;
+  color: #fff;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.actions button:hover {
+  background-color: #485a39;
+}
+
+.actions p {
+  font-size: 18px;
+}
+
+.actions a {
+  color: #596d48;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
