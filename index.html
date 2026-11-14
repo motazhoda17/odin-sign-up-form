@@ -7,6 +7,68 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Sign-up form</h1>
+  <aside class="sidebar">
+    <div class="logo-banner">
+      <h1 class="logo-text">ODIN</h1>
+    </div>
+    <p class="photo-credit">
+      Photo by
+      <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a>
+      on <a href="https://unsplash.com">Unsplash</a>
+    </p>
+  </aside>
+
+  <main class="content">
+    <section class="intro">
+      <p>
+        This is not a real online service! You know you need something like
+        this in your life to help you realize your deepest dreams. Sign up
+        <em>now</em> to get started.
+      </p>
+      <p>You <em>know</em> you want to.</p>
+    </section>
+
+    <form id="signup-form" class="form-section" action="#" method="post">
+      <h2>Let's do this!</h2>
+
+      <div class="fields">
+        <div class="field">
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" name="first_name" autocomplete="given-name" required>
+        </div>
+
+        <div class="field">
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" name="last_name" autocomplete="family-name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+        </div>
+
+        <div class="field">
+          <label for="confirm-password">Confirm password</label>
+          <input type="password" id="confirm-password" name="confirm_password" autocomplete="new-password" minlength="8" required>
+        </div>
+      </div>
+    </form>
+
+    <section class="actions">
+      <!-- form="signup-form" lets this button submit the form even though it sits outside it -->
+      <button type="submit" form="signup-form">Create Account</button>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </section>
+  </main>
 </body>
 </html>
