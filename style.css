@@ -1,1 +1,56 @@
-/* Styles coming next */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex; /* sidebar on the left, content on the right */
+  font-family: "Roboto", sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* ----- Sidebar ----- */
+.sidebar {
+  flex: 0 0 37%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Dark see-through strip so the logo is readable on the busy photo */
+.logo-banner {
+  margin-top: 22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-banner img {
+  height: 130px;
+}
+
+.logo-text {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-size: 88px;
+  color: #fff;
+}
+
+.photo-credit {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.photo-credit a {
+  color: #fff;
+}
