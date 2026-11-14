@@ -102,3 +102,31 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* ----- Inputs ----- */
+label {
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+}
+
+/* The field you're typing in: blue border + soft shadow */
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3);
+}
+
+/* Only turns red after the user has typed something invalid */
+input:user-invalid {
+  border-color: #b91c1c;
+}
